@@ -1,0 +1,39 @@
+.wrapper {
+    margin : 0 auto;
+    width:80%;
+}
+
+header {
+    height: 100px ;
+    background-color: transparent;
+}
+
+header ul {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    justify-content: stretch;
+}
+
+header ul li {
+    padding: 0 60px;
+    line-height: 100px;
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    font-size: 120%;
+}
+
+body {
+    background-color: aqua;
+}
+
+#logo   {
+    float: left;
+}
+
