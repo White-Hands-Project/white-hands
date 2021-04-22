@@ -1,0 +1,95 @@
+ html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+body {
+    font-family: "Scala Sans W01 Regular",Roboto,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #404040;
+  }
+  #about-sec {
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  #about-secOne {
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: xx-large;
+    color: #3f4156;
+  }
+  #about-secTwo {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    color: black;
+    font-size: large;
+  }
+
+  
+  #img {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+  }
+  .missionOne {
+    text-align: center;
+    font-size: x-large;
+    color: #3f4156;
+    margin: 1%;
+  }
+  .belifeOne {
+    text-align: center;
+    font-size: x-large;
+    color: #3f4156;
+    margin: 1%;
+  }
+  .missionTwo {
+    text-align: left;
+    margin: 2%;
+  }
+  .belifeTwo {
+    text-align: left;
+    margin: 2%;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

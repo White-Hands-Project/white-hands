@@ -1,0 +1,55 @@
+hr {height:2px;
+    border-width:2px;
+    width: 80%;
+    color:gray;
+    background-color:gray  }
+    
+footer {
+    height: 100px;
+    text-align: left;
+    background-color: blueviolet;    
+
+}
+
+
+footer ul li {
+    line-height: 100px;
+     display: inline-block ;
+     
+}
+
+#copyrights{
+    float: left;
+    margin-left: 50px;
+    line-height: 100px;
+
+}
+
+#icons {
+    margin-right: 50px;
+    float: right;
+    list-style:none
+    
+}
+
+
+#icons a {
+    margin-right: 10px; 
+    
+}
+
+#icons img {
+    opacity:0.8;
+
+
+}
+  
+#icons img:hover {
+
+    width: 30px;
+    opacity:1;
+    transition: 0.3s;
+
+}
+
+  
