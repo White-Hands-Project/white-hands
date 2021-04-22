@@ -34,9 +34,16 @@ function handleSubmit (event){
 function rederList(){
     Volunteerlist.textContent= '';
     for (let i=0 ; i<volunteer.arrOfObject.length; i++){
-        const volName = document.createElement('li')
-        Volunteerlist.appendChild(volName);
-        volName.textContent = volunteer.arrOfObject[i].name;
+        const voldiv = document.createElement('div')
+        Volunteerlist.appendChild(voldiv); 
+       let ul = document.createElement('ul');
+       voldiv.appendChild(ul);
+       for (let i =0 ; i < volunteer.arrOfObject.length; i++){
+        let li = document.createElement('li');
+        ul.appendChild(li);
+        li.textContent = `Name: ${volunteer.arrOfObject[i].name}`;
+       
+       }
     }
     
 }
