@@ -38,10 +38,10 @@ function rederList(){
         Volunteerlist.appendChild(voldiv); 
        let ul = document.createElement('ul');
        voldiv.appendChild(ul);
-       for (let i =0 ; i < volunteer.arrOfObject.length; i++){
+       for (let i =0 ; i < 5; i++){
         let li = document.createElement('li');
         ul.appendChild(li);
-        li.textContent = `Name: ${volunteer.arrOfObject[i].name}`;
+        li.textContent = i;
        
        }
     }
