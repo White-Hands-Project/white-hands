@@ -11,6 +11,7 @@ function volunteer(name, mobileNumber, date, startTime, endTime) {
     this.startTime = startTime;
     this.endTime = endTime;
     volunteer.arrOfObject.push(this);
+    saveToLs();
 }
 
 volunteer.arrOfObject = [];
@@ -18,17 +19,39 @@ volunteer.arrOfObject = [];
 function handleSubmit(event) {
     event.preventDefault();
 
-
     const first = event.target;
     const name = first.name.value;
     const mobileNumber = first.mobileNumber.value;
     const date = first.date.value;
     const startTime = first.startTime.value;
     const endTime = first.endTime.value;
-
+    
     new volunteer(name, mobileNumber, date, startTime, endTime)
     rederList();
+    
+   
+    
 };
+
+
+function saveToLs(){
+    let lsArr = JSON.stringify(volunteer.arrOfObject)
+    localStorage.setItem('volSaved' , lsArr)
+   
+     console.log(lsArr);
+}
+
+function getFromLs(){
+    let data = localStorage.getItem('volSaved');
+
+    let order = JSON.parse(data);
+
+    if (order){
+        volunteer.arrOfObject =order;
+    }
+    rederList();
+}
+
 
 
 function rederList() {
@@ -57,9 +80,10 @@ function rederList() {
         const liendTime = document.createElement('li')
         ul.appendChild(liendTime);
         liendTime.textContent = `avialable hour to:  ${volunteer.arrOfObject[i].endTime}`;
-
+      
         }
+       
 }
 
-console.log(volunteer.arrOfObject);
 volunForm.addEventListener('submit', handleSubmit);
+getFromLs();
