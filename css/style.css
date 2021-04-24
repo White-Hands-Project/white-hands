@@ -1,94 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
-    font-family: 'Bangers', cursive;    
+    /* font-family: 'Bangers', cursive;     */
     box-sizing: border-box;
-}
-
-body main {
-    height: 80vh;
+    font-family: 'Montserrat', sans-serif;
+    clear:both;
     
 }
-
+body{
+    min-height: 100%;
+    margin: 0%;
+    min-width: 100%;
+    padding:0px;
+}
+body main {
+    min-width:100% ;
+    margin:0%
+}
+/* .main-container{
+    padding-right:10%;
+    padding-left: 10%;
+} */
 
 .hero {
-    width: 100%;
-    height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1602863211757-cfe6454947fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-    -webkit-background-size: cover;
+    min-width: 100%;
+    min-height: 700px;
+    background-image: url('https://images.pexels.com/photos/3184437/pexels-photo-3184437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover; 
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     background-attachment: fixed;
-    /* background-repeat: none;
+    background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
-    */
-    position: relative;
+   background-position: center;
+    padding-top: 45px;
+    margin-right: 0%;
 }
 
 .hero-para {
     width: 30%;
-    position: absolute;
-    right: 15%;
+    /* position: absolute; */
+    margin-left: 55%;
     background-color: white;
     opacity: 0.6;
-    top: 15vh;
-    border-radius: 20vh;
-    padding: 40px;
+    padding-top: 8%;
+    border-radius: 30%;
+    padding: 30px;
     text-align: center;
     margin-bottom: 10%;
+    line-height: 2em;
 }
 
 .hero-para h3{
-    font-size: 3rem;
+    font-size: 2rem;
     opacity: 0.9;
-
+    font-family: 'Anton', sans-serif;
 }
 
 .hero-para h2{
-    font-size: 4rem;
-    color: red;
+    font-size: 3rem;
+    color: #b88d77;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+font-family: 'Anton', sans-serif;
+text-decoration: none;
 }
 
 .hero-para p{
-    font-size: 2rem;
-}
-
-.hero-para div{
-    color: red;
-    text-decoration: none;
-}
-
-button {
-    border: none; 
-    font-size: 2.5rem;
-    color:red;
-    cursor: pointer;
-    background-color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    font-size: 1.5rem;
+    font-weight: bold;
     
 }
 
+
+
+.hero-para button {
+    border: none; 
+    font-size: 2.5rem;
+    color:white;
+    opacity:100%;
+    cursor: pointer;
+    background-color:#b88d77;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    font-family: 'Anton', sans-serif;
+    z-index: 1;
+}
+
 main article {
-    padding: 60px;
-    padding-right: 20%;
-    padding-left: 20%;
-    width: 100%;   
-    height: 500px; 
+   
+    padding-right: 5%;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    margin-right: 0%;
+    width :100%;  
+    height: 10%; 
     background-color: #f3bda1;
-    font-family: 'Fredoka One', cursive;
     font-size: 1.5rem;
+    font-weight: bold;
     color: black;
     font-style: lighter;
+    line-height: 1.5em ;
+    display: flex;
+}
+article p{
+    width: 70%;
+    display: inline-block;
+   padding-top: 8%;
+    
+    
 }
 article img {
+    display: inline-block;
     width: 20%;
+    right: 5%;
+
+}
+.main-story-container{
+    width: 100%;
+    height:20% ;
+}
+.main-story-container h3{
+   
+    text-align: center;
+    margin-top: 6%;
+    /* margin-bottom: 5%; */
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+}
+#story-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    margin-right: 8%;
+    margin-left: 8%;
+   
+}
+.story{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: #b88d77;
+    margin:5%;
+    border-radius: 10%;
+    
+ 
 }
 
+.story img{
+    width: 100%;
+    max-height: 80%;
+   padding-left: 0%;
+   padding-right: 0%;
+   border-radius: 10%;
+    
+}
+.story p{
+    text-align: justify;
+    padding: 5%;
+    font-weight: bold;
+   
+   
+}
+.story h4{
+    padding:3%;
+    
+    font-family: 'Anton', sans-serif;
+}
 
+.last-article{
+    min-width: 100%;
+   margin: 0%;
+   padding: 5%;
+    background-color:white;
+    min-height: 10%;
+    background-image: url('https://images.unsplash.com/photo-1500206329404-5057e0aefa48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.left{
+    float: left;
+    width: 60%;
+    
+    
+}
+.last-article h4{
+    
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+  
+}
+
+.right{
+    float: right;
+    width: 40%;
+    
+}
+.right button{
+    margin-top: 5%;
+    border: none; 
+    font-size: 2rem;
+    color:white;
+    opacity:100%;
+    cursor: pointer;
+    background-color:#b88d77;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    font-family: 'Anton', sans-serif;
+    z-index: 1;
+    border-radius: 40%;
+}
