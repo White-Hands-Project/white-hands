@@ -11,7 +11,7 @@ function volunteer(name, mobileNumber, date, startTime, endTime) {
     this.startTime = startTime;
     this.endTime = endTime;
     volunteer.arrOfObject.push(this);
-    saveToLs();
+    
 }
 
 volunteer.arrOfObject = [];
@@ -28,9 +28,8 @@ function handleSubmit(event) {
     
     new volunteer(name, mobileNumber, date, startTime, endTime)
     rederList();
-    
-   
-    
+    saveToLs();
+     
 };
 
 
@@ -50,6 +49,7 @@ function getFromLs(){
         volunteer.arrOfObject =order;
     }
     rederList();
+    
 }
 
 
@@ -82,7 +82,7 @@ function rederList() {
         liendTime.textContent = `avialable hour to:  ${volunteer.arrOfObject[i].endTime}`;
       
         }
-       
+     
 }
 
 volunForm.addEventListener('submit', handleSubmit);

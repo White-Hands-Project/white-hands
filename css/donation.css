@@ -1,4 +1,19 @@
-#test {
+#volunteerlist div ul li:first-child {
     color: red;
-    
+    font-size: large;
+}
+
+#volunteerlist div {
+    border: green;
+    border-radius: 5px;
+    border-style: dashed;
+    display: inline-block;
+    margin: 15px;
+    width: 20%;
+}
+
+
+#volunteerlist div ul li:nth-child(4){
+    color:gold;
+
 }
