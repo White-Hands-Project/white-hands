@@ -7,33 +7,37 @@
     /* font-family: 'Bangers', cursive;     */
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    clear:both;
+    
     
 }
-body{
+/* body{
     min-height: 100%;
     margin: 0%;
     min-width: 100%;
     padding:0px;
-}
+} */
 body main {
     min-width:100% ;
-    margin:0%
+    margin:0%;
+    position: relative;
+    height: 100%;
+    clear: both;
+    
 }
 /* .main-container{
     padding-right:10%;
     padding-left: 10%;
 } */
 
-.hero {
+/* .hero {
     min-width: 100%;
     min-height: 700px;
     background-image: url('https://images.pexels.com/photos/3184437/pexels-photo-3184437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    /* -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; */
+    -o-background-size: cover;
     background-size: cover; 
-    /* background-size: 100% 100%; */
+    background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: none;
     background-size: cover;
@@ -41,17 +45,25 @@ body main {
    background-position: center;
     padding-top: 45px;
     margin-right: 0%;
-}
+    width: 100%;
+    height: 100%;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    position: relative;
+} */
 
 .hero-para {
     width: 30%;
     /* position: absolute; */
+    margin-right: 15%;
     margin-left: 55%;
     background-color: white;
     opacity: 0.6;
-    padding-top: 8%;
-    border-radius: 30%;
-    padding: 30px;
+    /* top: 15vh; */
+    border-radius: 20vh;
+    padding: 40px;
     text-align: center;
     margin-bottom: 10%;
     line-height: 2em;
@@ -76,7 +88,6 @@ text-decoration: none;
     font-weight: bold;
     
 }
-
 
 
 .hero-para button {
@@ -123,11 +134,13 @@ article img {
 .main-story-container{
     width: 100%;
     height:20% ;
+    background-color: white;
 }
 .main-story-container h3{
    
     text-align: center;
-    margin-top: 6%;
+    padding-top: 60px;
+    /* margin-top: 6%; */
     /* margin-bottom: 5%; */
     font-family: 'Anton', sans-serif;
     font-size: 1.5rem;
@@ -184,6 +197,7 @@ article img {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    
 }
 .left{
     float: left;
