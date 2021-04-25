@@ -6,7 +6,7 @@
 #volunteerlist div {
     border: green;
     border-radius: 5px;
-    border-style: dashed;
+    /* border-style: dashed; */
     display: inline-block;
     margin: 15px;
     width: 20%;

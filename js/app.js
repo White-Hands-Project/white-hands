@@ -85,5 +85,26 @@ function rederList() {
      
 }
 
+
+// imported from w3school with edit
+function myFunction() {
+  var input, filter, table, ull, lii, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("volunteerlist");
+  ull = table.getElementsByTagName("ul");
+  for (i = 0; i < ull.length; i++) {
+    lii = ull[i].getElementsByTagName("li")[2];
+    if (lii) {
+      txtValue = lii.textContent || lii.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        ull[i].style.display = "";
+      } else {
+        ull[i].style.display = "none";
+      }
+    }       
+  }
+}
+
 volunForm.addEventListener('submit', handleSubmit);
 getFromLs();
