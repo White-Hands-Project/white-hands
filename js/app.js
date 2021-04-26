@@ -87,3 +87,24 @@ function rederList() {
 
 volunForm.addEventListener('submit', handleSubmit);
 getFromLs();
+
+
+
+function myFunction() {
+    var input, filter, listdiv, li,  i, txtValue,ul,div;
+    input = document.getElementById("myInput");
+    listdiv = document.getElementById("volunteerlist");
+  
+    for (i = 0; i < 5; i++) {
+        div = listdiv.getElementsByTagName('div')[i]
+        ul=div.getElementsByTagName('ul')
+        li = ul.getElementsByTagName("li");
+        txtValue = li.textContent || li.innerText;
+        if (txtValue.indexOf(filter) > -1) {
+            div[i].style.display = "";
+        } else {
+            div.remove()
+        }
+    }
+}
+
