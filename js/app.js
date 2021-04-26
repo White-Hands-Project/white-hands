@@ -33,21 +33,6 @@ function handleSubmit(event) {
 };
 
 
-<<<<<<< HEAD
-function rederList(){
-    Volunteerlist.textContent= '';
-    for (let i=0 ; i<volunteer.arrOfObject.length; i++){
-        const voldiv = document.createElement('div')
-        Volunteerlist.appendChild(voldiv); 
-       let ul = document.createElement('ul');
-       voldiv.appendChild(ul);
-       for (let i =0 ; i < 5; i++){
-        let li = document.createElement('li');
-        ul.appendChild(li);
-        li.textContent = i;
-       
-       }
-=======
 function saveToLs(){
     let lsArr = JSON.stringify(volunteer.arrOfObject)
     localStorage.setItem('volSaved' , lsArr)
@@ -62,7 +47,6 @@ function getFromLs(){
 
     if (order){
         volunteer.arrOfObject =order;
->>>>>>> main
     }
     rederList();
     
@@ -128,21 +112,4 @@ getFromLs();
 
 
 
-function myFunction() {
-    var input, filter, listdiv, li,  i, txtValue,ul,div;
-    input = document.getElementById("myInput");
-    listdiv = document.getElementById("volunteerlist");
-  
-    for (i = 0; i < 5; i++) {
-        div = listdiv.getElementsByTagName('div')[i]
-        ul=div.getElementsByTagName('ul')
-        li = ul.getElementsByTagName("li");
-        txtValue = li.textContent || li.innerText;
-        if (txtValue.indexOf(filter) > -1) {
-            div[i].style.display = "";
-        } else {
-            div.remove()
-        }
-    }
-}
 
