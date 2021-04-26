@@ -24,10 +24,13 @@ body {
 #about-secOne {
   margin: 2%;
   margin-top: 6%;
-  margin-right: 11%;
+  margin-right: 9%;
   font-size: 2.5rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-family: 'Anton', sans-serif;
+}
+#button:hover {
+  transform:scale(1.35);
 }
 #about-secTwo {
   margin-top: 1%;
@@ -37,7 +40,7 @@ body {
   font-weight: bold;
 }
 #about-secTwo button {
-  margin-right: 7%;
+  margin-right: 5%;
   margin-top: 20px;
   border: none; 
     font-size: 2.5rem;
@@ -71,6 +74,8 @@ body {
   font-size: 1.3rem;
   color: #404040;
   line-height: 1.7rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .belifeTwo {
   text-align: left;
@@ -79,6 +84,8 @@ body {
   color: #404040;
   text-align: center;
   line-height: 1.7rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 #firstPara {
   font-family: 'Anton', sans-serif;
@@ -118,23 +125,24 @@ body {
 .column {
   display: inline-flex;
   justify-content: center;
-  width: 14%;
-  /* margin-bottom: 16px;
-  padding: 0 8px; */
+  width: 16.4%;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5%;
   padding: 20px;
   background-color: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform:scale(1.35);
 }
 .card img {
-  border-radius: 50%;
-  width: 50%;
-}
+  border-radius: 50%;}
 .container {
   text-align: center;
   line-height: 1.7rem;
+  transition: 0.3s ease-in-out;
 }
 .container h2 {
   font-family: 'Anton', sans-serif;
@@ -158,11 +166,40 @@ body {
 .contactUs h2 {
   margin: 3%;
 }
+#details {
+  background-image: url('../images/pexels-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+#details h3 {
+  text-align: center;
+  margin: 1%;
+  font-size: 1.5rem;
+  font-family: 'Anton', sans-serif;
+}
+#details p {
+  margin: 1%;
+  font-size: 1.3rem;
+  color: #404040;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 #map {
-  width: 50%;
-  float: left;
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5%;
   padding: 10px;
   background-color: whitesmoke;
+}
+#map iframe{
+  width: 100%;
+  display: block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-size: 100%;
+  background-attachment: fixed;
 }
