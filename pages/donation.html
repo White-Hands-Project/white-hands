@@ -42,6 +42,9 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, ratione sit earum asperiores ea numquam
                 voluptatibus reiciendis nulla possimus, obcaecati necessitatibus saepe eius expedita alias deserunt.
                 Voluptates pariatur nesciunt neque.</p>
+
+                <input type="date" id="myInput" oninput="myFunction()" placeholder="Search for names.." title="Type in a name">
+
             <section>
                 <form id="volunForm">
                     <fieldset style="display: block;">
@@ -54,9 +57,9 @@
                         <label for="date">select avivalable date</label>
                         <input type="date" id="date" name="date" >
                         <label for="startTime">select avivalable hours: from </label>
-                        <input type="time" id="startTime" name="startTime" min="00:00" max="12:00" >
+                        <input type="time" id="startTime" name="startTime">
                         <label for="endTime"> to </label>
-                        <input type="time" id="endTime" name="endTime" min="00:00" max="12:00" >
+                        <input type="time" id="endTime" name="endTime">
                         <button type="submit">Submit</button>
                     </fieldset>                     
                 </form>
