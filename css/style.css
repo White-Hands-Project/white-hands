@@ -119,7 +119,7 @@ main article {
     margin-right: 0%;
     width :100%;  
     height: 5%; 
-    background-color: #325288;
+    background-color: #9e570c;
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
@@ -132,7 +132,7 @@ main article {
 article p{
     width: 70%;
     display: inline-block;
-    color: white;
+    color: black;
     
     
 }
@@ -173,7 +173,7 @@ article img {
     width: 50%;
     height:400px;
     overflow: hidden;
-    background-color: #325288;
+    background-color: #39617c;
     margin:5%;
     border-radius: 10%;
 }
@@ -191,14 +191,14 @@ article img {
     text-align: justify;
     padding: 3% 7%;
     font-weight: bold;
-    color:white;
+    color:black;
     line-height: 19px;
 }
 
 .story h4{
     padding-top:3%;
     font-family: sans-serif;
-    color: white;
+    color: black;
     font-weight: bolder;
     font-size: 20px;
 }
@@ -207,7 +207,7 @@ article img {
     min-width: 100%;
     margin: 0%;
     padding: 5%;
-    background-color:black;
+    background-color:white;
     min-height: 10%;
     /* background-image: url('https://images.unsplash.com/photo-1500206329404-5057e0aefa48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80'); */
     background-size:cover;
@@ -217,7 +217,7 @@ article img {
 }
 
 .last-article p{
-    color: white;
+    color:black;
 }
 
 .left{
@@ -260,3 +260,107 @@ article img {
 }
 
 
+.cal-container{
+    box-sizing: border-box;
+    padding: 5%;
+    margin: 0%;
+    background-color: white;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar{
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0,0,0.4) ;
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color: #c06714;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0,0,0.5);
+}
+
+.month i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.month p{
+    font-size: 1.6rem;
+}
+.weekdays{
+    width:100%;
+    height:5rem;
+    padding:0 0.4rem;
+    display: flex;
+    align-items: center;
+
+}
+.weekdays div{
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing:0.1rem;
+    width:6.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0,0,0.5);
+}
+
+.days{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+
+}
+
+.days div{
+    font-size: 1.4rem;
+    margin:0.3rem;
+    width:5.7rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0,0,0.5);
+    transition: background-color 0.2s;
+}
+.days div:hover:not(.today){
+background-color: #262626;
+border: 2rem solid #777;
+cursor: pointer;
+transform:scale(2);
+}
+.prev-date,
+.next-date{
+   opacity: 0.5; 
+  
+}
+.today{
+    background-color: #167e56;
+}
+
+.prev-date p{
+    background-color:black;
+}
+.next-date p{
+    background-color:black; 
+}
