@@ -1,96 +1,168 @@
- html {
-    box-sizing: border-box;
-    font-size: 100%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
 body {
-     position: relative;
-    font-family: "Scala Sans W01 Regular",Roboto,Arial,sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #404040;
-  }
-  #about-sec {
-    background-color: whitesmoke;
-    width: 100%;
-  }
-  #about-secOne {
-    margin-top: 2%;
-    margin-left: 2%;
-    font-size: xx-large;
-    color: #3f4156;
-  }
-  #about-secTwo {
-    margin-top: 1%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    color: black;
-    font-size: large;
-  }
-
-  
-  #img {
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    padding: 5px;
-    width: 100%;
-    height: auto;
-  }
-  .missionOne {
-    text-align: center;
-    font-size: x-large;
-    color: #3f4156;
-    margin: 1%;
-  }
-  .belifeOne {
-    text-align: center;
-    font-size: x-large;
-    color: #3f4156;
-    margin: 1%;
-  }
-  .missionTwo {
-    text-align: left;
-    margin: 2%;
-  }
-  .belifeTwo {
-    text-align: left;
-    margin: 2%;
-  }
-
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
+   position: relative;
+  font-family: "Scala Sans W01 Regular",Roboto,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+#about-sec {
+  width: 100%;
+  padding: 5%;
+  text-align: right;
+  background-image: url("/images/Christmas-Calendar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#about-secOne {
+  margin: 2%;
+  margin-top: 6%;
+  margin-right: 11%;
+  font-size: 2.5rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Anton', sans-serif;
+}
+#about-secTwo {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-right: 7%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#about-secTwo button {
+  margin-right: 7%;
+  margin-top: 20px;
+  border: none; 
+    font-size: 2.5rem;
+    color:white;
+    opacity:100%;
+    cursor: pointer;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    font-family: 'Anton', sans-serif;
+    z-index: 1;
+    background-color: rgb(156, 63, 63,.9);
+}
+.missionOne {
+  text-align: center;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.belifeOne {
+  text-align: center;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.missionTwo {
+  text-align: left;
+  margin: 2%;
+  font-size: 1.3rem;
+  color: #404040;
+  line-height: 1.7rem;
+}
+.belifeTwo {
+  text-align: left;
+  margin: 2%;
+  font-size: 1.3rem;
+  color: #404040;
+  text-align: center;
+  line-height: 1.7rem;
+}
+#firstPara {
+  font-family: 'Anton', sans-serif;
+  color: rgb(156, 63, 63,.9);
+  font-size: 1.5rem;
+}
+#hr {
+  clear: both;
+  background: url('/images/hr-img.png') top center;
+  display: block;
+  height: 8px;
+  border: 0;
+  position: relative;
+}
+#ourTeam {
+  text-align: center;
+  margin: 2%;
+  margin-top: 3%;
+  font-size: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#conntactUs {
+  text-align: center;
+  margin: 2%;
+  margin-top: 3%;
+  font-size: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row {
+  margin-bottom: 4%;
+}
+.column {
+  display: inline-flex;
+  justify-content: center;
+  width: 14%;
+  /* margin-bottom: 16px;
+  padding: 0 8px; */
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+.card img {
+  border-radius: 50%;
+  width: 50%;
+}
+.container {
+  text-align: center;
+  line-height: 1.7rem;
+}
+.container h2 {
+  font-family: 'Anton', sans-serif;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+@media screen and (max-width: 650px) {
   .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+    width: 100%;
+    display: block;
   }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+}
+.conntactUs {
+  border: 3px solid #fff;}
+.contactUs h2 {
+  margin: 3%;
+}
+#map {
+  width: 50%;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  padding: 10px;
+  background-color: whitesmoke;
+}
