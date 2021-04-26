@@ -1,3 +1,7 @@
+body{
+    width: 99%;
+}
+
 #volunteerlist div ul li:first-child {
     color: red;
     font-size: large;
@@ -8,7 +12,7 @@
     border-radius: 5px;
     border-style: dashed;
     display: inline-block;
-    margin: 15px;
+    
     width: 100%;
 }
 
@@ -19,6 +23,19 @@
 
 #volunteerlist div ul{
    margin: 10px;
-   width: 100%;
+   width: 99%;
+   
    
 }
+#volunteerlist div {
+   
+    display: inline-block;
+    
+ }
+
+ form{
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
