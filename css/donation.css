@@ -1,0 +1,24 @@
+#volunteerlist div ul li:first-child {
+    color: red;
+    font-size: large;
+}
+
+#volunteerlist {
+    /* border: red; */
+    border-radius: 5px;
+    border-style: dashed;
+    display: inline-block;
+    margin: 15px;
+    width: 100%;
+}
+
+
+#volunteerlist div ul li:nth-child(4){
+    color:gold;
+}
+
+#volunteerlist div ul{
+   margin: 10px;
+   width: 100%;
+   
+}

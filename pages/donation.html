@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
     <link rel="stylesheet" href="../css/donation.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
+
 <body>
-    <header>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="index.html"><img src="../images/logo-white-1.jfif" alt=""></a>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#">REGISTERATION</a>
+                        <ul id="drop">
+                            <li><a href="#">VOULNTEER</a></li>
+                            <li><a href="../pages/patient.html">PATIENT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+            <br>
+            <br>
 
-    </header>
-    <main>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, ratione sit earum asperiores ea numquam
+                voluptatibus reiciendis nulla possimus, obcaecati necessitatibus saepe eius expedita alias deserunt.
+                Voluptates pariatur nesciunt neque.</p>
 
-    </main>
+                <input type="date" id="myInput" oninput="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+            <section>
+                <form id="volunForm">
+                    <fieldset style="display: block;">
+                        <legend>Valounter form</legend>
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" >
+                        <label for="mobileNumber">mobile number</label>
+                        <input type="number" id="number" name="mobileNumber" >
+                        <label for="date">select avivalable date</label>
+                        <input type="date" id="date" name="date" >
+                        <label for="startTime">select avivalable hours: from </label>
+                        <input type="time" id="startTime" name="startTime">
+                        <label for="endTime"> to </label>
+                        <input type="time" id="endTime" name="endTime">
+                        <button type="submit">Submit</button>
+                    </fieldset>                     
+                </form>
+            </section>
+            <section>
+                <h3> Volunteer list</h3>
+                <div id="volunteerlist">                     
+                </div>
+            </section>
+        </main>
     <footer>
-
-    </footer>
+        <div id="copyrights">
+            <p>
+                Copyright &copy; 2021 All Rights Reserved 
+            </p>
+        </div>
+        <div id="icons">
+            <ul class="social-icons">
+                <li><a target="_blank" class="facebook" href="https://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+        </div>
+</footer>
     <script src="../js/app.js"></script>
     <script src="../js/storage.js"></script>
 </body>
