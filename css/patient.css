@@ -1,0 +1,79 @@
+#coverImg{
+    min-height: 100%;
+    position: relative;
+    background-image: url('../images/couch.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  
+    
+}
+
+
+
+
+
+
+
+
+
+#dateSearch{
+    text-align: center;
+    width: 20%;
+    margin:0 auto;
+    font-size: x-large;
+
+
+}
+
+#dateSearch p{
+    margin-left: 15%;
+    
+
+}
+
+#listTitle {
+    width: 80%;
+    margin:0 auto;
+    text-align: left;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+
+input,
+textarea {
+    /* margin: 0 auto; */
+    padding: 30px  ;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #325288;
+    color: white;
+    border-radius: 4px;
+}
+
+#volunteerlist{
+margin: 0 5% 0 10% ;
+width: 85%;
+}
+
+#volunteerlist div {
+    border-radius: 5px;
+    float: left;
+    width: 20%;
+    background-color: #325288;
+    margin-right:5% ;
+    
+    margin-bottom: 2%;
+    
+
+
+
+}
+
+

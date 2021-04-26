@@ -25,6 +25,7 @@ footer {
     height: 80px;
     text-align: left;
     background-color: rgba(68,68,68,255);    
+    clear: both;
 }
 
 footer p {
