@@ -78,13 +78,13 @@ body main {
 
 .hero-para h2{
     font-size: 3.5rem;
-    color: #9e570c;    ;
+    color: #ec524b;    ;
     padding-top: 10px;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
     font-family: 'Anton', sans-serif;
     text-decoration: none;
 }
-
+#ec524b    #c2b092
 .hero-para p{
     font-size: 1.5rem;
     font-weight: 1000;
@@ -98,7 +98,7 @@ body main {
     color:white;
     opacity:100%;
     cursor: pointer;
-    background-color:#9e570c;    ;
+    background-color:#ec524b;    ;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   */
     font-family: 'Anton', sans-serif;
     z-index: 1;
@@ -119,7 +119,7 @@ main article {
     margin-right: 0%;
     width :100%;  
     height: 5%; 
-    background-color: #9e570c;
+    background-color: #eae3c8;
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
@@ -173,7 +173,7 @@ article img {
     width: 50%;
     height:400px;
     overflow: hidden;
-    background-color: #39617c;
+    background-color: #c2b092;
     margin:5%;
     border-radius: 10%;
 }
@@ -206,13 +206,17 @@ article img {
 .last-article{
     min-width: 100%;
     margin: 0%;
+    height: 100vh;
     padding: 5%;
     background-color:white;
-    min-height: 10%;
-    /* background-image: url('https://images.unsplash.com/photo-1500206329404-5057e0aefa48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80'); */
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* min-height: 10%; */
+    background-image: url('https://images.unsplash.com/photo-1558522195-e1201b090344?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
     color: white;    
 }
 
@@ -228,22 +232,24 @@ article img {
 .last-article h4{
     font-family: 'Anton', sans-serif;
     font-weight: lighter;
+    color: #794e15;
 }
 
 .right{
     float: right;
     width: 40%;
+    margin-top: 30%;
     
 }
 
 .right button{
-    margin-top: 5%;
+    
     border: none; 
     font-size: 2rem;
     color:#f4eee8;
     opacity:100%;
     cursor: pointer;
-    background-color:#5b5b5b;
+    background-color:#c24914;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   */
     font-family: 'Anton', sans-serif;
     z-index: 1;
@@ -254,18 +260,22 @@ article img {
     opacity: 0.7;
 }
 
-#whitehandsimage img{
+/* #whitehandsimage img{
     display: block;
     width: 100%;
-}
+} */
 
 
 .cal-container{
     box-sizing: border-box;
     padding: 5%;
     margin: 0%;
-    background-color: white;
-    color: white;
+    background-image:url('https://images.unsplash.com/photo-1574676130659-a1d0dd4791fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80');
+    background-repeat:repeat;
+    background-size:unset;
+    
+    
+    color: #ec524b;
     width: 100%;
     height: 100%;
     display: flex;
@@ -276,14 +286,14 @@ article img {
 .calendar{
     width: 45rem;
     height: 52rem;
-    background-color: #222227;
-    box-shadow: 0 0.5rem 3rem rgba(0, 0,0,0.4) ;
+    background-color: #c2b092;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0,0,0.4);
 }
 
 .month{
     width: 100%;
     height: 12rem;
-    background-color: #c06714;
+    background-color: #9ad3bc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,6 +321,7 @@ article img {
     padding:0 0.4rem;
     display: flex;
     align-items: center;
+    color: black;
 
 }
 .weekdays div{
@@ -329,7 +340,7 @@ article img {
     display: flex;
     flex-wrap: wrap;
     padding: 0.2rem;
-
+    color: black;
 }
 
 .days div{
@@ -355,7 +366,7 @@ transform:scale(2);
   
 }
 .today{
-    background-color: #167e56;
+    background-color: #ec524b;
 }
 
 .prev-date p{

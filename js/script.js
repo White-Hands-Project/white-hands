@@ -128,7 +128,7 @@ function handleDaysClick (event){
          patientInput= element.textContent=`${input}:00 o'clock`;
         console.log(patientInput);
         console.log(months[month]);
-        savingToLs();
+         savingToLs();
             }
             }
             
