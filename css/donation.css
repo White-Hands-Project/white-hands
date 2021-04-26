@@ -1,3 +1,7 @@
+body{
+    width: 99%;
+}
+
 #volunteerlist div ul li:first-child {
     color: red;
     font-size: large;
@@ -18,7 +22,11 @@
 
 #volunteerlist div ul{
    margin: 10px;
-   width: 100%;
+   width: 99%;
+   
+   
+}
+#volunteerlist div {
    
 }
 #volunteerlist div {

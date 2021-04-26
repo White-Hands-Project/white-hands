@@ -1,7 +1,8 @@
 'use strict';
 
-const volun = document.getElementById('volunForm');
-const Volunteerlist = document.getElementById('volunteerlist');
+var volunForm = document.getElementById('volunForm');
+
+var Volunteerlist = document.getElementById('volunteerlist');
 
 
 function volunteer(name, mobileNumber, date, startTime, endTime) {
@@ -27,10 +28,10 @@ function handleSubmit(event) {
     const endTime = first.endTime.value;
     
     new volunteer(name, mobileNumber, date, startTime, endTime)
-    rederList();
     saveToLs();
      
 };
+
 
 
 function saveToLs(){
@@ -40,17 +41,17 @@ function saveToLs(){
      console.log(lsArr);
 }
 
-function getFromLs(){
-    let data = localStorage.getItem('volSaved');
+// function getFromLs(){
+//     let data = localStorage.getItem('volSaved');
 
-    let order = JSON.parse(data);
+//     let order = JSON.parse(data);
 
-    if (order){
-        volunteer.arrOfObject =order;
-    }
-    rederList();
+//     if (order){
+//         volunteer.arrOfObject =order;
+//     }
+//     rederList();
     
-}
+// }
 
 
 
@@ -108,7 +109,8 @@ function myFunction() {
 }
 
 volunForm.addEventListener('submit', handleSubmit);
-getFromLs();
+
+
 
 
 
