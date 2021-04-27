@@ -124,7 +124,7 @@ function handleDaysClick (event){
             currentItem.appendChild(element);
             //console.log(prevLastDay-x +1); 
           
-        let input= prompt('Please, Enter the wanted Time:');
+        let input= prompt('Please, Enter the wanted Hour:');
         currentItem.style.color='crimson';
         element.style.color= 'crimson';
         element.style.fontSize='10px';
@@ -186,9 +186,9 @@ function handleDaysClick (event){
             currentItem.appendChild(element);
             //console.log(prevLastDay-x +1); 
           
-        let input= prompt('Please, Enter the wanted Time:');
+        let input= prompt('Please, Enter the wanted Hour:');
         currentItem.style.color='crimson';
-        element.style.backgroundColor='black';
+        // element.style.backgroundColor='black';
         element.style.color= 'crimson';
         element.style.fontSize='10px';
         element.style.fontWeight='bold';
