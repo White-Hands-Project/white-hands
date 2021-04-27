@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/aboutus.css">
 </head>
 <body>
     <header>
-
+      <nav>
+        <a href="index.html"><img src="../images/white hands-1-1.png" alt=""></a>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">REGISTERATION</a>
+                <ul id="drop">
+                    <li><a href="../pages/donation.html">VOULNTEER</a></li>
+                    <li><a href="../pages/patient.html">PATIENT</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/aboutus.html">ABOUT US</a></li>
+        </ul>
+    </nav>
     </header>
     <main>
 
@@ -20,7 +35,7 @@
       </div>
       <div id="about-secTwo">
         <p>Community is Stronger Than Cancer!</p>
-        <button id="button">Volunteer Now</button>
+        <a href="../pages/donation.html"><button>Volunteer Now</button></a>
       </div>
     </div>
 
@@ -60,8 +75,8 @@
             </div>
             <div class="container">
               <h2>Ahmad Omar Shalein</h2>
-              <p class="title">Team Member</p>
-              <p>ahmadshalein@gmail.com</p>
+              <p class="title">B.Sc. in Electrical Engineering</p>
+              <p class="mail">ahmadshalein@gmail.com</p>
             </div>
           </div>
         </div>
@@ -71,8 +86,8 @@
             <img src="/images/Haya.jpg" alt="Haya Balasmeh" style="width:100%">
             <div class="container">
               <h2>Haya Balasmeh</h2>
-              <p class="title">Team Member</p>
-              <p>hmbalasmeh@yahoo.com</p>
+              <p class="title">B.Sc. in Doctor of Pharmacy</p>
+              <p class="mail">hmbalasmeh@yahoo.com</p>
             </div>
           </div>
         </div>
@@ -82,8 +97,8 @@
             <img src="/images/Anas.jpg" alt="Anas Al-Ramahi" style="width:100%">
             <div class="container">
               <h2>Anas Al-Ramahi</h2>
-              <p class="title">Team Member</p>
-              <p>shero2ram@gmail.com</p>
+              <p class="title">B.Sc. in Computer Science</p>
+              <p class="mail">shero2ram@gmail.com</p>
             </div>
           </div>
         </div>
@@ -93,8 +108,8 @@
             <img src="/images/Mohammad.jpg" alt="Mohammad Al-Saify" style="width:100%">
             <div class="container">
               <h2>Mohammad Al-Saify</h2>
-              <p class="title">Team Member</p>
-              <p>mohammad.alsaify@gmail.com</p>
+              <p class="title">B.Sc. in Civil Engineering</p>
+              <p class="mail">mohammad.alsaify@gmail.com</p>
             </div>
           </div>
         </div>
@@ -104,19 +119,19 @@
             <img src="/images/Mahmoud.jpg" alt="Mahmood Dinah" style="width:100%">
             <div class="container">
               <h2>Mahmood Dinah</h2>
-              <p class="title">Team Member</p>
-              <p>mahmood.dinah2@gmail.com</p>
+              <p class="title">B.Sc. in Computer Information Systems</p>
+              <p class="mail">mahmood.dinah2@gmail.com</p>
             </div>
           </div>
         </div>
       
         <div class="column">
           <div class="card">
-            <img src="/images/Abd.jpg" alt="Abdelmajed Alabed Alrahem" style="width:100%">
+            <img src="/images/Abd.jpg" alt="Abd Almajed Al-Sa'afen" style="width:100%">
             <div class="container">
-              <h2>Abdelmajed Alabed Alrahem</h2>
-              <p class="title">Team Member</p>
-              <p>Abd.d@live.com</p>
+              <h2>Abd Almajed Al-Sa'afen</h2>
+              <p class="title">B.Sc. in Mechanical Engineering</p>
+              <p class="mail">Abd.d@live.com</p>
             </div>
           </div>
         </div>
@@ -142,11 +157,21 @@
       <div id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13549.275555664257!2d35.8688197!3d31.897932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1619341119094!5m2!1sen!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-
-
     </main>
-    <footer>
-
+    <footer>          
+      <div id="copyrights">
+        <p>
+            Copyright &copy; 2021 All Rights Reserved 
+        </p>
+    </div>
+    <div id="icons">
+        <ul class="social-icons">
+            <li><a target="_blank" class="facebook" href="https://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+    </div>
     </footer>
     <script src="../js/app.js"></script>
     <script src="../js/storage.js"></script>
