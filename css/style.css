@@ -222,7 +222,7 @@ article img {
     margin: 0%;
     /* height: 100vh; */
     padding: 5%;
-    
+    background-color: transparent;
     /* min-height: 10%; */
     /* background-image: url('https://images.unsplash.com/photo-1558522195-e1201b090344?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
     -webkit-background-size: cover;
@@ -379,8 +379,12 @@ transform:scale(2);
 }
 .prev-date,
 .next-date{
+    
    opacity: 0.5; 
   
+}
+.days div {
+    display: flex;
 }
 .today{
     background-color: #ec524b;

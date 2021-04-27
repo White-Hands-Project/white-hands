@@ -235,7 +235,7 @@ currentItem.appendChild(element);
 // JSON.parse(returnedObj);
 //  JSON.parse(returnedInp);
 currentItem.style.color='crimson';
-element.style.backgroundColor='black';
+// element.style.backgroundColor='black';
         element.style.color= 'crimson';
         element.style.fontSize='10px';
         element.style.fontWeight='bold';
