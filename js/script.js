@@ -51,21 +51,21 @@ function renderCalendar(){
     let days= "";
     
     for(let x=firstDayIndex;x>0;x--){// to set the dates to the correct order of the days
-        days+= `<div class="prev-date">${prevLastDay-x +1}</div>`
+        days+= `<div id='${x}p' class="prev-date">${prevLastDay-x +1}</div>`
     }
     
     for(let i=1 ;i<=lastDay ;i++){
         if(i===currentDay && month ===currentMonth){
             days+= `<div class='today'>${i}</div>`
         } else{
-        days += `<div>${i}</div>`;
+        days += `<div id='${i}'>${i}</div>`;
         console.log(days);
         monthDays.innerHTML = days;
         }
     }
     
     for(let j=1;j<=nextDays;j++){
-        days+= `<div class="next-date">${j}</div>`;
+        days+= `<div id='${j}n' class="next-date">${j}</div>`;
         monthDays.innerHTML = days;
     }
 }
@@ -94,12 +94,17 @@ document.querySelector('.days').addEventListener('click',handleDaysClick);
 // function savingToLs(){
 
 // }
-let dayReg;
-let patientInput;
+let dayReg=[];
+
+let patientInput=[];
+let element;
+let currentItem;
+
+
         function savingToLs() {
             localStorage.setItem('input-day',JSON.stringify(dayReg));
             // localStorage.setItem('input-Date',JSON.stringify(months[month]));
-            localStorage.setItem('input-Value',patientInput);
+            localStorage.setItem('input-Value',JSON.stringify(patientInput));
 
         }
 function handleDaysClick (event){
@@ -112,27 +117,29 @@ function handleDaysClick (event){
            
             if(parseInt(event.target.childNodes[0].data) === prevLastDay-x +1){
     //         console.log(firstDayIndex);
-            event.target.id=event.target.childNodes[0].data;
+            // event.target.id=event.target.childNodes[0].data;
             console.log(event.target.id);
-            let currentItem= document.getElementById(event.target.id);
-            let element =document.createElement('p');
+            currentItem= document.getElementById(event.target.id);
+            element =document.createElement('p');
             currentItem.appendChild(element);
             //console.log(prevLastDay-x +1); 
           
-        let input= prompt('Please, Enter the wanted Time:');
-        currentItem.style.color='orange';
-        element.style.color= 'orange';
+        let input= prompt('Please, Enter the wanted Hour:');
+        currentItem.style.color='crimson';
+        element.style.color= 'crimson';
         element.style.fontSize='10px';
         element.style.fontWeight='bold';
-        element.style.position='absolute';
+        // element.style.position='absolute';
         element.style.bottom='0';
         element.style.zIndex='1';
         //element.style.position=
-         patientInput= element.textContent=`${input}:00 o'clock`;
-        console.log(patientInput);
-        console.log(months[month]);
-        dayReg=event.target.childNodes[0].data;
-        console.log(dayReg);
+         patientInput.push(element.textContent=`${input}:00 o'clock`);
+        // console.log(patientInput);
+        // console.log(months[month]);
+        dayReg.push(event.target.id);
+        // console.log(dayReg);
+        console.log(currentItem);
+        console.log(element);
          savingToLs();
             }
             }
@@ -140,7 +147,7 @@ function handleDaysClick (event){
        
 }
   else if (event.target.classList[0] === 'next-date') {
-    event.target.id=event.target.childNodes[0].data;
+    // event.target.id=event.target.childNodes[0].data;
             console.log(event.target.id);
             let currentItem= document.getElementById(event.target.id);
             let element =document.createElement('p');
@@ -148,15 +155,23 @@ function handleDaysClick (event){
             //console.log(prevLastDay-x +1); 
             
             let input= prompt('Please, Enter the wanted Hour:');
-            currentItem.style.color='orange';
-            element.style.color= 'orange';
+            currentItem.style.color='crimson';
+            element.style.color= 'crimson';
             element.style.fontSize='10px';
             element.style.fontWeight='bold';
-            element.style.position='absolute';
+            // element.style.position='absolute';
             element.style.bottom='0';
             element.style.zIndex='1';
             //element.style.position=
             element.textContent=`${input}:00 o'clock`;
+            patientInput.push(element.textContent=`${input}:00 o'clock`);
+            // console.log(patientInput);
+            // console.log(months[month]);
+            dayReg.push(event.target.id);
+            // console.log(dayReg);
+            console.log(currentItem);
+            console.log(element);
+             savingToLs();
        
     
 } else {
@@ -164,24 +179,32 @@ function handleDaysClick (event){
            
         if(parseInt(event.target.childNodes[0].data) === x){
             console.log(firstDayIndex);
-            event.target.id=event.target.childNodes[0].data;
+            // event.target.id=event.target.childNodes[0].data;
             console.log(event.target.id);
             let currentItem= document.getElementById(event.target.id);
-            let element =document.createElement('p');
+            element =document.createElement('p');
             currentItem.appendChild(element);
             //console.log(prevLastDay-x +1); 
           
-        let input= prompt('Please, Enter the wanted Time:');
-        currentItem.style.color='orange';
-        element.style.backgroundColor='black';
-        element.style.color= 'orange';
+        let input= prompt('Please, Enter the wanted Hour:');
+        currentItem.style.color='crimson';
+        // element.style.backgroundColor='black';
+        element.style.color= 'crimson';
         element.style.fontSize='10px';
         element.style.fontWeight='bold';
-        element.style.position='absolute';
+        // element.style.position='absolute';
         element.style.bottom='0';
         element.style.zIndex='1';
         //element.style.position=
         element.textContent=`${input}:00 o'clock`;
+        patientInput.push(element.textContent=`${input}:00 o'clock`);
+        // console.log(patientInput);
+        // console.log(months[month]);
+        dayReg.push(event.target.id);
+        // console.log(dayReg);
+        console.log(currentItem);
+        console.log(element);
+         savingToLs();
         }
     
 
@@ -190,31 +213,39 @@ function handleDaysClick (event){
 
 }
 
-console.log(savingToLs());
+//console.log(savingToLs());
 }
     
 
 function gettingFromLocal() {
 // let returnedObj = localStorage.getItem('input-Month');
-let returnedInp = localStorage.getItem('input-Value');
-let returnedD= localStorage.getItem('input-day');
-
-
-let current= document.getElementById(dayReg);
-let element =document.createElement('p');
-current.appendChild(element);
+let returnedInp = JSON.parse(localStorage.getItem('input-Value'));
+let returnedD= JSON.parse(localStorage.getItem('input-day'));
+console.log(returnedInp);
+//console.log(dayReg);
+if(returnedInp){
+    for(let i=0;i<returnedInp.length;i++){
+currentItem= document.getElementById(`${returnedD[i]}`);
+element =document.createElement('p');
+console.log(currentItem);
+// element.setAttribute('id',)
+// console.log(element);
+currentItem.appendChild(element);
+// console.log(currentItem);
 
 // JSON.parse(returnedObj);
 //  JSON.parse(returnedInp);
-current.style.color='orange';
-        element.style.color= 'orange';
+currentItem.style.color='crimson';
+// element.style.backgroundColor='black';
+        element.style.color= 'crimson';
         element.style.fontSize='10px';
         element.style.fontWeight='bold';
-        element.style.position='absolute';
+        // element.style.position='absolute';
         element.style.bottom='0';
         element.style.zIndex='1';
-        //element.style.position=
-        element.textContent= `${returnedD},${returnedInp}`;
-    
+//         
+        element.textContent= `${returnedInp[i]}`;
+    }
+} 
 }
 gettingFromLocal();
