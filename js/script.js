@@ -45,7 +45,7 @@ function renderCalendar(){
     const nextDays = 7-lastDayIndex -1;
     
     const currentDay = new Date().getDate();
-    console.log(currentDay);
+    console.log(new Date().getDate());
     const currentMonth= new Date().getMonth();
     console.log(currentMonth);
     let days= "";
@@ -94,10 +94,13 @@ document.querySelector('.days').addEventListener('click',handleDaysClick);
 // function savingToLs(){
 
 // }
+let dayReg;
 let patientInput;
         function savingToLs() {
-            //localStorage.setItem('input-Date',JSON.stringify(months[month]));
+            localStorage.setItem('input-day',JSON.stringify(dayReg));
+            // localStorage.setItem('input-Date',JSON.stringify(months[month]));
             localStorage.setItem('input-Value',patientInput);
+
         }
 function handleDaysClick (event){
     console.log(event.target.childNodes[0].data);
@@ -128,6 +131,8 @@ function handleDaysClick (event){
          patientInput= element.textContent=`${input}:00 o'clock`;
         console.log(patientInput);
         console.log(months[month]);
+        dayReg=event.target.childNodes[0].data;
+        console.log(dayReg);
          savingToLs();
             }
             }
@@ -141,17 +146,17 @@ function handleDaysClick (event){
             let element =document.createElement('p');
             currentItem.appendChild(element);
             //console.log(prevLastDay-x +1); 
-          
-        let input= prompt('Please, Enter the wanted Hour:');
-        currentItem.style.color='orange';
-        element.style.color= 'orange';
-        element.style.fontSize='10px';
-        element.style.fontWeight='bold';
-        element.style.position='absolute';
-        element.style.bottom='0';
-        element.style.zIndex='1';
-        //element.style.position=
-        element.textContent=`${input}:00 o'clock`;
+            
+            let input= prompt('Please, Enter the wanted Hour:');
+            currentItem.style.color='orange';
+            element.style.color= 'orange';
+            element.style.fontSize='10px';
+            element.style.fontWeight='bold';
+            element.style.position='absolute';
+            element.style.bottom='0';
+            element.style.zIndex='1';
+            //element.style.position=
+            element.textContent=`${input}:00 o'clock`;
        
     
 } else {
@@ -192,6 +197,11 @@ console.log(savingToLs());
 function gettingFromLocal() {
 // let returnedObj = localStorage.getItem('input-Month');
 let returnedInp = localStorage.getItem('input-Value');
+let returnedD= localStorage.getItem('input-day');
+let current= document.getElementById(dayReg);
+let element =document.createElement('p');
+current.appendChild(element);
+element.textContent= `${returnedD},${returnedInp}`;
 //  JSON.parse(returnedObj);
 //  JSON.parse(returnedInp);
 
