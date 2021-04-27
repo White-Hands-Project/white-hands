@@ -94,7 +94,7 @@ document.querySelector('.days').addEventListener('click',handleDaysClick);
 // function savingToLs(){
 
 // }
-let dayReg;
+let dayReg=[];
 
 let patientInput=[];
 let element;
@@ -102,7 +102,7 @@ let currentItem;
 
 
         function savingToLs() {
-            //localStorage.setItem('input-day',JSON.stringify(dayReg));
+            localStorage.setItem('input-day',JSON.stringify(dayReg));
             // localStorage.setItem('input-Date',JSON.stringify(months[month]));
             localStorage.setItem('input-Value',JSON.stringify(patientInput));
 
@@ -133,10 +133,10 @@ function handleDaysClick (event){
         element.style.bottom='0';
         element.style.zIndex='1';
         //element.style.position=
-         patientInput[0]=element.textContent=`${input}:00 o'clock`;
+         patientInput.push(element.textContent=`${input}:00 o'clock`);
         // console.log(patientInput);
         // console.log(months[month]);
-        patientInput[1]=event.target.id;
+        dayReg.push(event.target.id);
         // console.log(dayReg);
         console.log(currentItem);
         console.log(element);
@@ -164,10 +164,10 @@ function handleDaysClick (event){
             element.style.zIndex='1';
             //element.style.position=
             element.textContent=`${input}:00 o'clock`;
-            patientInput[0]=element.textContent=`${input}:00 o'clock`;
+            patientInput.push(element.textContent=`${input}:00 o'clock`);
             // console.log(patientInput);
             // console.log(months[month]);
-            patientInput[1]=event.target.id;
+            dayReg.push(event.target.id);
             // console.log(dayReg);
             console.log(currentItem);
             console.log(element);
@@ -197,10 +197,10 @@ function handleDaysClick (event){
         element.style.zIndex='1';
         //element.style.position=
         element.textContent=`${input}:00 o'clock`;
-        patientInput[0]=element.textContent=`${input}:00 o'clock`;
+        patientInput.push(element.textContent=`${input}:00 o'clock`);
         // console.log(patientInput);
         // console.log(months[month]);
-        patientInput[1]=event.target.id;
+        dayReg.push(event.target.id);
         // console.log(dayReg);
         console.log(currentItem);
         console.log(element);
@@ -220,11 +220,12 @@ function handleDaysClick (event){
 function gettingFromLocal() {
 // let returnedObj = localStorage.getItem('input-Month');
 let returnedInp = JSON.parse(localStorage.getItem('input-Value'));
-//let returnedD= JSON.parse(localStorage.getItem('input-day'));
+let returnedD= JSON.parse(localStorage.getItem('input-day'));
 console.log(returnedInp);
 //console.log(dayReg);
 if(returnedInp){
-currentItem= document.getElementById(`${returnedInp[1]}`);
+    for(let i=0;i<returnedInp.length;i++){
+currentItem= document.getElementById(`${returnedD[i]}`);
 element =document.createElement('p');
 console.log(currentItem);
 // element.setAttribute('id',)
@@ -243,7 +244,8 @@ currentItem.style.color='crimson';
         element.style.bottom='0';
         element.style.zIndex='1';
 //         
-        element.textContent= `${returnedInp[0]}`;
+        element.textContent= `${returnedInp[i]}`;
+    }
 } 
 }
 gettingFromLocal();
