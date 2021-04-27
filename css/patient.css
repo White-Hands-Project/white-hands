@@ -1,26 +1,18 @@
-/* #coverImg{
-    min-height: 100%;
-    position: relative;
-    background-image: url('../images/couch.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  
-    
-}
- */
-  
 
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+main {
 
-
- body {
-    background-color: #f1fcfc;
+background-image: url(https://images.unsplash.com/photo-1611955727536-b3799f3c4ab9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=758&q=80);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+height:800px;
+ 
 }
+
+ /* body {
+   background-color: #f1fcfc;
+} */
 
 #headerDonation {
     background-color: #fff;
@@ -43,10 +35,13 @@
 }
 
 #dateSearch p{
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder ; 
-    margin-left: 15%;
-    margin-top: 5%;
+    margin-left: 25%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* margin-top: 5%; */
 }
 
 #listTitle {
@@ -67,15 +62,15 @@ textarea {
     border: 0;
     width: 100%;
     font-size: 1rem;
-    background-color: #d15e34;
+    background-color: #09a098;
     color: white;
     border-radius: 4px;
 }
 
 #volunteerlist{
-    position: relative;
 
-    margin: 0 5% 0 10% ;
+    position: relative;
+    margin: 0% 5% 0 10% ;
     width: 85%;
 }
 
@@ -88,6 +83,7 @@ textarea {
 }
 
 #volunteerlist div ul {
+    color: #f1fcfc;
     display: inline-block;
     width: 250px;
     height: 200px;
