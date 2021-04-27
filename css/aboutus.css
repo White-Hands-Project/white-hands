@@ -6,7 +6,7 @@ html {
   font-size: 100%;
 }
 body {
-   position: relative;
+  position: relative;
   font-family: "Scala Sans W01 Regular",Roboto,Arial,sans-serif;
   margin: 0;
   padding: 0;
@@ -29,8 +29,9 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-family: 'Anton', sans-serif;
 }
-#button:hover {
+#about-secTwo button:hover {
   transform:scale(1.35);
+  transition: 0.2s;
 }
 #about-secTwo {
   margin-top: 1%;
@@ -50,7 +51,7 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
     font-family: 'Anton', sans-serif;
     z-index: 1;
-    background-color: rgb(156, 63, 63,.9);
+    background-color: #810000;
 }
 .missionOne {
   text-align: center;
@@ -89,7 +90,7 @@ body {
 }
 #firstPara {
   font-family: 'Anton', sans-serif;
-  color: rgb(156, 63, 63,.9);
+  color: #810000;
   font-size: 1.5rem;
 }
 #hr {
@@ -118,48 +119,6 @@ body {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}
-.row {
-  margin-bottom: 4%;
-}
-.column {
-  display: inline-flex;
-  justify-content: center;
-  width: 16.4%;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
-  padding: 20px;
-  background-color: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-.card:hover {
-  transform:scale(1.35);
-}
-.card img {
-  border-radius: 50%;}
-.container {
-  text-align: center;
-  line-height: 1.7rem;
-  transition: 0.3s ease-in-out;
-}
-.container h2 {
-  font-family: 'Anton', sans-serif;
-}
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.title {
-  color: grey;
-}
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 }
 .conntactUs {
   border: 3px solid #fff;}
@@ -202,4 +161,70 @@ body {
   background-size: cover; 
   background-size: 100%;
   background-attachment: fixed;
+}
+/* from https://www.codingnepalweb.com/ */
+
+.row {
+  margin-left: 10%;
+}
+.column {
+  height: 250px;
+  width: 250px;
+  display: inline-flex;
+  justify-content:center;
+  /* width: 16.4%; */
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #F0FFFF, #810000);
+}
+.column:hover{
+  height: 400px;
+  width: 311px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+}
+.column .card img{
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #fff;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+.card .container h2{
+  color: black;
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 25px;
+  font-family: 'Anton', sans-serif;
+}
+.card .title{
+  color: #404040;
+  font-size: 17px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.7rem;
+}
+.card .container .mail{
+  color: black;
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 1px 20px 10px 20px!important;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+}
 }
