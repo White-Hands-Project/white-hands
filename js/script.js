@@ -198,13 +198,23 @@ function gettingFromLocal() {
 // let returnedObj = localStorage.getItem('input-Month');
 let returnedInp = localStorage.getItem('input-Value');
 let returnedD= localStorage.getItem('input-day');
+
+
 let current= document.getElementById(dayReg);
 let element =document.createElement('p');
 current.appendChild(element);
-element.textContent= `${returnedD},${returnedInp}`;
-//  JSON.parse(returnedObj);
-//  JSON.parse(returnedInp);
 
+// JSON.parse(returnedObj);
+//  JSON.parse(returnedInp);
+current.style.color='orange';
+        element.style.color= 'orange';
+        element.style.fontSize='10px';
+        element.style.fontWeight='bold';
+        element.style.position='absolute';
+        element.style.bottom='0';
+        element.style.zIndex='1';
+        //element.style.position=
+        element.textContent= `${returnedD},${returnedInp}`;
     
 }
 gettingFromLocal();

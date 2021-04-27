@@ -84,10 +84,10 @@ body main {
     font-family: 'Anton', sans-serif;
     text-decoration: none;
 }
-#ec524b    #c2b092
+
 .hero-para p{
     font-size: 1.5rem;
-    font-weight: 1000;
+    font-weight: bolder;
     
 }
 
@@ -183,7 +183,7 @@ article img {
     width: 50%;
     height:400px;
     overflow: hidden;
-    background-color: #c2b092;
+    background-color: #eae3c8;
     margin:5%;
     border-radius: 10%;
 }
