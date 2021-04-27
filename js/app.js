@@ -27,7 +27,7 @@ function handleSubmit(event) {
   const endTime = first.endTime.value;
   new volunteer(name, mobileNumber, date, startTime, endTime);
   saveToLs();
-  alert("Thank you for your time");
+  alert('Thank you for your time');
 
 }
 
@@ -108,16 +108,14 @@ function myFunction() {
         counter++;
       }
     }
-    
   }
-    console.log(i,counter);
 
-  if (counter==i){
-  let p=document.createElement('p');
-  divv.appendChild(p);
-  p.textContent= 'Unfortunately, No volunteer for this date';
-  
+  if (counter===i){
+
+    alert('Unfortunately, No volunteers for this date')
   }
+
+
 }
 
 volunForm.addEventListener('submit', handleSubmit);

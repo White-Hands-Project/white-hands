@@ -103,36 +103,3 @@ footer ul li {
 .social-icons a.youtube:hover{
     background-color: #cd201f;
 }
-
-#index-footer {
-    background-color: white;   
-}
-
-#index-footer p{
-    color: black;
-}
-
-#index-footer .social-icons a {
-    background-color:black;
-    color:grey; 
-}
-
-#index-footer .social-icons .social-icons a:focus, #index-footer .social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe;
-}
-#index-footer .social-icons a.facebook:hover{
-    background-color:#3b5998;
-}
-#index-footer .social-icons a.twitter:hover{
-    background-color:#00aced;
-}
-#index-footer .social-icons a.linkedin:hover{
-    background-color:#007bb6;
-}
-#index-footer .social-icons a.youtube:hover{
-    background-color: #cd201f;
-}
-
-
