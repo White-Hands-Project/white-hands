@@ -206,22 +206,32 @@ article img {
     font-weight: bolder;
     font-size: 20px;
 }
-
-.last-article{
-    min-width: 100%;
-    margin: 0%;
-    height: 100vh;
-    padding: 5%;
-    background-color:white;
-    /* min-height: 10%; */
+#big-con{
     background-image: url('https://images.unsplash.com/photo-1558522195-e1201b090344?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
     background-size: 100% 100%;
-    background-attachment: fixed;
-    color: white;    
+    background-attachment: fixed; 
+    width: 100%;
+}
+.last-article{
+    min-width: 100%;
+    margin: 0%;
+    /* height: 100vh; */
+    padding: 5%;
+    
+    /* min-height: 10%; */
+    /* background-image: url('https://images.unsplash.com/photo-1558522195-e1201b090344?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
+    background-attachment: fixed; */
+      
 }
 
 .last-article p{
@@ -276,9 +286,10 @@ article img {
     box-sizing: border-box;
     padding: 5%;
     margin: 0%;
-    background-image:url('https://images.pexels.com/photos/6045500/pexels-photo-6045500.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    /* background-image:url('https://images.unsplash.com/photo-1498569026542-39c64353e401?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80');
     background-repeat:no-repeat;
     background-size:cover;
+    background-position:left; */
     color: black;
     width: 100%;
     height: 100%;
