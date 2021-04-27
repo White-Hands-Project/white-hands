@@ -1,4 +1,4 @@
-#coverImg{
+/* #coverImg{
     min-height: 100%;
     position: relative;
     background-image: url('../images/couch.jpg');
@@ -12,13 +12,25 @@
   
     
 }
+ */
+  
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 
+ body {
+    background-color: #f1fcfc;
+}
 
+#headerDonation {
+    background-color: #fff;
+    border-bottom:solid #CCF1F0 2px;
+}
 
-
-
-
+#headerDonation ul li a{
+    color : #3e5d68;
+    text-shadow: none;
+}
 
 
 #dateSearch{
@@ -31,16 +43,19 @@
 }
 
 #dateSearch p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder ; 
     margin-left: 15%;
-    
-
+    margin-top: 5%;
 }
 
 #listTitle {
+    font-size: x-large;
     width: 80%;
     margin:0 auto;
     text-align: left;
-    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder ;
     margin-bottom: 20px;
 }
 
@@ -52,28 +67,65 @@ textarea {
     border: 0;
     width: 100%;
     font-size: 1rem;
-    background-color: #325288;
+    background-color: #d15e34;
     color: white;
     border-radius: 4px;
 }
 
 #volunteerlist{
-margin: 0 5% 0 10% ;
-width: 85%;
+    position: relative;
+
+    margin: 0 5% 0 10% ;
+    width: 85%;
 }
 
 #volunteerlist div {
-    border-radius: 5px;
+     /* border-radius: 50% 10%;
+    background-image: var(--img-url), linear-gradient(to bottom left, #f83600, #f9d423); */
     float: left;
-    width: 20%;
-    background-color: #325288;
-    margin-right:5% ;
+
+
+}
+
+#volunteerlist div ul {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    background-color: #09a098;
+    margin-right:10% ;
+    margin-bottom: 5%;
+    /* width: 20%; */
+    border-radius: 50% 10%;
+    background-image: var(--img-url), linear-gradient(to bottom left, #f83600, #f9d423);
+
+}
+
+#volunteerlist div ul li {
+    font-family: 'Anton', sans-serif; 
+    padding-left: 35px;
+    padding-bottom: 10px;
     
-    margin-bottom: 2%;
-    
+}
+
+#volunteerlist div ul li:nth-child(1){
+    padding-top: 50px;
+}
+/* 
+ #volunteerlist div::before ul{
+content: '';
+display:inline-block;
+width: 20px;  
+}   */
 
 
+/* 
+#volunteerlist div::after {
+right: 20px;  
+} */
 
+   
+#blank{
+    height: 350px;
 }
 
 

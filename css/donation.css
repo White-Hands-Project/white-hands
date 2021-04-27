@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
 body {
-    background-color: #f4eee8;
+    background-color: #f1fcfc;
 }
 
 #headerDonation {
-    background-color: #5b6467;
-    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    background-color: #fff;
+    border-bottom:solid #CCF1F0 2px;
 }
+
+
+
+#headerDonation ul li a{
+    color : #3e5d68;
+    text-shadow: none;
+}
+
+
 
 #volunteerlist div ul li:first-child {
     color: red;
@@ -32,9 +45,6 @@ body {
    
 }
 #volunteerlist div {
-   
-}
-#volunteerlist div {
     display: inline-block;
     
  }
@@ -48,18 +58,18 @@ body {
 } */
 
 h1 {
-    font-family: 'Poppins', sans-serif, 'arial';
+    font-family: 'Orelega One', cursive;
     font-weight: 600;
-    font-size: 72px;
-    color: #325288;
+    font-size: 60px;
+    color: #09a098
+    ;
     text-align: center;
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif, 'arial';
-    font-weight: bold;
-    
-    font-size: 20px;
+    font-family: 'Anton', sans-serif; 
+    /* font-weight: bold;   */
+    font-size: 22px;
     color: black;
     line-height: 1.5;
 }
@@ -89,6 +99,8 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input label {
+    font-family: 'Anton', sans-serif; 
+
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
@@ -106,11 +118,14 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 input,
 textarea {
+    
     padding: 30px  ;
     border: 0;
     width: 100%;
     font-size: 1rem;
-    background-color: #325288;
+    background-color: #09a098
+
+    ;
     color: white;
     border-radius: 4px;
 }
@@ -142,7 +157,8 @@ textarea {
     padding: 7px 40px;
     border-radius: 60px;
     display: inline-block;
-    background-color: #325288;
+    background-color: #d15e34
+    ;
     color: #f4eee8;
     font-size: 18px;
     cursor: pointer;
@@ -204,13 +220,14 @@ input[type=checkbox]:checked + label {
 
 
 #volunteerPara p  {
+    font-family: 'Anton', sans-serif; 
 
     /* width: 50%; */
     display: inline-block;
     margin: 5% 10% 0 10%;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: bold;
-    font-size: large;
+    font-size: 22px;
 
     
 }
