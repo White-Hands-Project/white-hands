@@ -1,22 +1,75 @@
-#coverImg{
-    min-height: 100%;
-    position: relative;
-    background-image: url('../images/couch.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  
-    
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
+div{
+    display: block;
+}
 
+.bgimg-1 {
+    background-image: url('https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    min-height: 500px;
+    
+}
+.bgimg-1,.bgimg-2,.bgimg-3{ 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+}
 
-
-
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: 'Anton', sans-serif;
+}
+.border{
+    background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+.cont{
+    color: #777;
+    background-color: #282E34;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    display: block;
+}
+.bgimg-2 {
+    background-image: url('https://images.unsplash.com/photo-1590363763899-f0b78a7bb968?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    min-height: 400px;
+}
+.inside{
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    min-height:100%;
+    
+}
+.bgimg-3{
+    background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80');
+    min-height: 400px;
+}
+.cont-2{
+    min-height:100%;
+}
+#headerDonation {
+    background-color: transparent;
+}
 
 
 
@@ -26,54 +79,88 @@
     width: 20%;
     margin:0 auto;
     font-size: x-large;
-
+   
 
 }
 
 #dateSearch p{
+    font-family: 'Anton', sans-serif;
+     
     margin-left: 15%;
-    
-
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
 }
 
 #listTitle {
+    font-size: x-large;
     width: 80%;
     margin:0 auto;
     text-align: left;
-    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder ;
     margin-bottom: 20px;
 }
 
 
 input,
 textarea {
-    /* margin: 0 auto; */
     padding: 30px  ;
     border: 0;
     width: 100%;
     font-size: 1rem;
-    background-color: #325288;
+    background-color: #8a3d3d;
     color: white;
+    font-family: 'Anton', sans-serif;
     border-radius: 4px;
 }
 
 #volunteerlist{
-margin: 0 5% 0 10% ;
-width: 85%;
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #volunteerlist div {
-    border-radius: 5px;
     float: left;
-    width: 20%;
-    background-color: #325288;
-    margin-right:5% ;
-    
-    margin-bottom: 2%;
-    
+}
 
-
+#volunteerlist div ul {
+    color: #f1fcfc;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    background-color: #853d3d;
+    margin-right:10% ;
+    margin-bottom: 5%;
+    border-radius: 50% 10%;
+    background-image: var(--img-url), linear-gradient(to bottom left, #f83600, #f9d423);
 
 }
 
+#volunteerlist div ul li {
+    font-family:'Montserrat', sans-serif;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    
+}
 
+#volunteerlist div ul li:nth-child(1){
+    padding-top: 50px;
+}
+   
+#blank{
+    height: 350px;
+}
+
+#thirdBar{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 30px;
+}

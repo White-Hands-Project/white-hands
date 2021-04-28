@@ -8,17 +8,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/reset.css">
-        <!-- <link rel="stylesheet" href="../css/style.css"> -->
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="../css/donation.css"> -->
     <link rel="stylesheet" href="../css/patient.css">
     </head>
 <body id="coverImg">
+
     <div class="wrapper">
-        <header>
-            <nav id="headerDonation">
+        <header id="headerDonation">
+            <nav>
                 <a href="index.html"><img src="../images/white hands-1-1.png" alt=""></a>
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
@@ -32,27 +31,51 @@
                 </ul>
             </nav>
         </header>
-        <main>
-
+        <main> 
+        <div class='bgimg-1'>
+            <div class='caption'>
+                <span class='border'>WE CAN HELP</span>
+            </div>
+        </div>
+        <div class='cont'>
             <div id="dateSearch">
                 <p>
-                    Choose Date
+                    Choose Session Date
                 </p>
                 <input type="date" id="myInput" oninput="myFunction()" placeholder="Search for names.."
                 title="Type in a name"> 
             </div>
-
-            
-
-                <br>
-                <br>
-            <section>
-                <h3 id="listTitle"> Volunteer list</h3>
+        </div>
+        <div class='cont-2'>
+            <section class='inside'>
+                <h3 id="listTitle"> Available Volunteers</h3>
                 <div id="volunteerlist">
                 </div>
             </section>
+            <div class='cont-2'>
+                
+            </div>
+        </div>
+        <div class='bgimg-2'>
+
+        </div>
+        <div class='cont' id="thirdBar">
+            <br>
+            <p>
+                ALWAYS REMEMBER WE ARE ALL HERE FOR YOU
+                <br><br>    
+                The Couch you sit on to take your 
+                chemotherapy can FIT for us too, So DO NOT SKIP YOUR SESSION and ASK FOR A WHITE HAND.
+                <br>
+            </p>
+            <br>
+        </div>
+        <div class='bgimg-3'>
+
+        </div>
         </main>
-        <footer>
+    </div>
+        <footer id="patFooter">
             <div id="copyrights">
                 <p>
                     Copyright &copy; 2021 All Rights Reserved 
@@ -67,8 +90,9 @@
                 </ul>
             </div>
         </footer>
-    </div>
-    <script src="../js/app.js"></script>
-    <script src="../js/storage.js"></script>
+
+        <script src="../js/app.js"></script>
+        <script src="../js/storage.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
