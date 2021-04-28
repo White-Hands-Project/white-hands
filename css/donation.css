@@ -47,8 +47,7 @@ body {
 }
 #volunteerlist div {
     display: inline-block;
-    
- }
+}
  
 
 
@@ -75,8 +74,6 @@ h4 {
     line-height: 1.5;
 }
 
-/* ///// inputs /////*/
-
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 1rem;
     color: #f4eee8 ;
@@ -101,7 +98,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 .styled-input label {
     font-family: 'Anton', sans-serif; 
-
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
@@ -124,9 +120,7 @@ textarea {
     border: 0;
     width: 100%;
     font-size: 1rem;
-    background-color: #09a098
-
-    ;
+    background-color: #09a098;
     color: white;
     border-radius: 4px;
 }
@@ -193,9 +187,9 @@ input[type=checkbox]:checked + label {
   font-style: normal;
 }
 
-#date{
+/* #date{
     padding-bottom: 25px;
-}
+} */
 
 #volunteerImg{
 
@@ -228,12 +222,23 @@ input[type=checkbox]:checked + label {
     margin: 5% 10% 0 10%;
     /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: bold;
-    font-size: 22px;
-
-    
+    font-size: 22px; 
 }
 
 #volunForm {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+#number {
+    height: 23.188px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
