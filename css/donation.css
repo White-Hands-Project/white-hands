@@ -4,6 +4,7 @@
 
 body {
     background-color: #f1fcfc;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 #headerDonation {
@@ -27,17 +28,12 @@ body {
 }
 
 #volunteerlist {
-    /* border: red; */
     border-radius: 5px;
     border-style: dashed;
     display: inline-block;
     width: 100%;
 }
 
-
-#volunteerlist div ul li:nth-child(4){
-    color:gold;
-}
 
 #volunteerlist div ul{
    margin: 10px;
@@ -48,14 +44,6 @@ body {
 #volunteerlist div {
     display: inline-block;
 }
- 
-
-
-/* added from form */
-/* body {
-    background-color: #444442;
-    padding-top: 85px;
-} */
 
 h1 {
     font-family: 'Orelega One', cursive;
@@ -68,7 +56,6 @@ h1 {
 
 h4 {
     font-family: 'Anton', sans-serif; 
-    /* font-weight: bold;   */
     font-size: 22px;
     color: black;
     line-height: 1.5;
@@ -98,13 +85,11 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 .styled-input label {
     font-family: 'Anton', sans-serif; 
-    color: #999;
-    padding: 1.3rem 30px 1rem 30px;
+    color: #f4eee8;
+    padding: 1rem 30px 1rem 30px;
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
     pointer-events: none;
 }
 
@@ -151,7 +136,6 @@ textarea {
     float: right;
     padding: 7px 40px;
     border-radius: 60px;
-    /* display: inline-block; */
     background-color: #d15e34
     ;
     color: #f4eee8;
@@ -187,17 +171,11 @@ input[type=checkbox]:checked + label {
   font-style: normal;
 }
 
-/* #date{
-    padding-bottom: 25px;
-} */
-
 #volunteerImg{
 
     float: left;   
     width: 25%;
     margin-left: 5%;
-    /* background-color: #f4eee8; */
-
 }
 
 #volunteerImg img {
@@ -205,8 +183,6 @@ input[type=checkbox]:checked + label {
 }
 
 #volunteerPara {
-    /* background-color: #f4eee8; */
-
     display: inline;
     width: 70%;    
     float: right;
@@ -216,11 +192,8 @@ input[type=checkbox]:checked + label {
 
 #volunteerPara p  {
     font-family: 'Anton', sans-serif; 
-
-    /* width: 50%; */
     display: inline-block;
     margin: 5% 10% 0 10%;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: bold;
     font-size: 22px; 
 }
@@ -231,7 +204,7 @@ input[type=checkbox]:checked + label {
 }
 
 #number {
-    height: 23.188px;
+    height: 10%;
 }
 
 input::-webkit-outer-spin-button,
@@ -239,6 +212,4 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-
 

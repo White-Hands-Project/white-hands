@@ -1,17 +1,17 @@
 
- Volunteerlist = document.getElementById('volunteerlist');
+Volunteerlist = document.getElementById('volunteerlist');
 
 
 function getFromLs(){
-    let data = localStorage.getItem('volSaved');
+  let data = localStorage.getItem('volSaved');
 
-    let order = JSON.parse(data);
+  let order = JSON.parse(data);
 
-    if (order){
-        volunteer.arrOfObject =order;
-    }
-    rederList();
-    
+  if (order){
+    volunteer.arrOfObject =order;
+  }
+  rederList();
+
 }
 
 getFromLs();

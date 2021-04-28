@@ -1,9 +1,7 @@
 'use strict';
 
-var volunForm = document.getElementById('volunForm');
-
-var Volunteerlist = document.getElementById('volunteerlist');
-
+let volunForm = document.getElementById('volunForm');
+let Volunteerlist = document.getElementById('volunteerlist');
 
 function volunteer(name, mobileNumber, date, startTime, endTime) {
   this.name = name;
@@ -12,7 +10,6 @@ function volunteer(name, mobileNumber, date, startTime, endTime) {
   this.startTime = startTime;
   this.endTime = endTime;
   volunteer.arrOfObject.push(this);
-
 }
 
 volunteer.arrOfObject = [];
@@ -27,32 +24,17 @@ function handleSubmit(event) {
   const endTime = first.endTime.value;
   new volunteer(name, mobileNumber, date, startTime, endTime);
   saveToLs();
-  alert('Thank you for your time');
+  Swal.fire('Thank you for your time');
+
 
 }
-
 
 
 function saveToLs(){
   let lsArr = JSON.stringify(volunteer.arrOfObject);
   localStorage.setItem('volSaved' , lsArr);
 
-  console.log(lsArr);
 }
-
-// function getFromLs(){
-//     let data = localStorage.getItem('volSaved');
-
-//     let order = JSON.parse(data);
-
-//     if (order){
-//         volunteer.arrOfObject =order;
-//     }
-//     rederList();
-
-// }
-
-
 
 function rederList() {
   Volunteerlist.textContent = null;
@@ -112,16 +94,13 @@ function myFunction() {
 
   if (counter===i){
 
-    alert('Unfortunately, No volunteers for this date')
+    Swal.fire('Unfortunately, No volunteers for this date');
+
   }
 
 
 }
 
 volunForm.addEventListener('submit', handleSubmit);
-
-
-
-
 
 
