@@ -14,10 +14,11 @@ body {
 
 
 #headerDonation ul li a{
-    color : #3e5d68;
-    text-shadow: none;
+    background-color: white;
 }
-
+#headerDonation ul li ul li a{
+    background-color: transparent;
+}
 
 
 #volunteerlist div ul li:first-child {
@@ -150,8 +151,9 @@ textarea {
     float: right;
     padding: 7px 40px;
     border-radius: 60px;
-    display: inline-block;
-    background-color: #d15e34;
+    /* display: inline-block; */
+    background-color: #d15e34
+    ;
     color: #f4eee8;
     font-size: 18px;
     cursor: pointer;
